@@ -1,0 +1,17 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+	"dockerFile": "../Dockerfile",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"JakeBecker.elixir-ls",
+				"GitHub.copilot",
+				"eamodio.gitlens",
+				"masonliu.exercism"
+			]
+		}
+	},
+	"runArgs": ["--env-file",".env"],
+	"onCreateCommand": "exercism configure --token=$EXERCISM_TOKEN"
+}
