@@ -13,5 +13,7 @@
 		}
 	},
 	"runArgs": ["--env-file",".env"],
-	"onCreateCommand": "exercism configure --token=$EXERCISM_TOKEN"
+	"onCreateCommand": "exercism configure --token=$EXERCISM_TOKEN --workspace /root/exercism/",
+	"workspaceFolder": "/root/exercism",
+	"workspaceMount": "source=${localWorkspaceFolder},target=/root/exercism,type=bind,consistency=cached"
 }
