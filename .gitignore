@@ -1,7 +1,9 @@
 .env
 .vscode-server/*
+.vscode/*
 .ssh/*
 .gnupg/*
 .bash_history
 .gitconfig
 .onCreateCommandMarker
+erl_crash.dump
